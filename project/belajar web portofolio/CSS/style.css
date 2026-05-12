@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    padding: 30px 0;
+}
+
+.container{
+    margin-inline: auto;
+    width: 80%;
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 90%;
+    }
+}
+
+.navbar-box{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-box .menu{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navbar-box .menu li{
+    list-style-type: none;
+}
+
+.navbar-box .menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-box .menu li a:hover{
+    text-decoration: underline;
+}
+/* NAVBAR */
+
+/* HERO */
+.hero{
+    margin: 80px;
+}
+
+.hero-box{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-direction: column-reverse;
+}
+
+.hero-box img{
+    width: 300px;
+}
+
+.hero-box h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.hero-box h1 span{
+    font-weight: bold;
+    color: #00cba9;
+}
+
+@media (max-width: 768px){
+    .hero-box h1{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 475px){
+    .hero-box h1{
+        font-size: 40px;
+    }
+}
+/* HERO */
+header svg{
+    margin-bottom: -10px;
+}
+
+/* TENTANG */
+.tentang{
+    background-color: #00cba9;
+    padding-block: 50px;
+    color: white;
+    margin-bottom: -25px;
+}
+
+.tentang .container >h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.tentang-box .box:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    align-items: center;
+    margin-bottom: 150px;
+    gap: 50px;
+}
+
+.tentang-box .box:nth-child(1) img{
+    width: 300px;
+    padding: 10px, 10px, 0px, 10px;
+    background-color: #00d6b2;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-inline: auto ;
+}
+
+.tentang-box .box:nth-child(1) img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tentang-box .box:nth-child(1) p{
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.tentang-box .box:nth-child(1) p span{
+    font-weight: bold;
+}
+
+.tentang-box .box:nth-child(1) a{
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.tentang-box .box:nth-child(1) a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.tentang-box .tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tentang-box .tools .tools-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.tentang-box .tools .tools-box:hover{
+    background-color: white;
+    color: black;
+}
+
+.tentang-box .tools .tools-box img{
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+@media(max-width:992px){
+    .tentang-box .box:nth-child(1){
+    grid-template-columns: 1fr;
+    }
+
+    .tentang-box .box:nth-child(1) div{
+        text-align: center;
+    }
+}
+
+/* TENTANG */
+
+
+/* PROYEK */
+.proyek{
+    padding: 50px;
+}
+
+.proyek-box{
+    margin-top: 50px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.proyek-box .box{
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.proyek-box .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.proyek-box .proyek-desk{
+    margin-top: 20px;
+}
+
+.proyek-box .box p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.proyek-box .proyek-desk .proyek-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proyek-box .proyek-desk .proyek-btn a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #00cba9;
+    color: white;
+}
+
+.proyek-box .proyek-desk .proyek-btn a:hover{
+    background-color: #00d6b2;
+}
+
+@media(max-width:930px){
+    .proyek-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PROYEK */
+
+
+/* FOOTER */
+
+footer{
+    background-color: #00cba9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: -10px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+footer .social{
+    display: flex;
+    gap: 20px;
+}
+
+footer .social a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    footer{
+        flex-direction: column-reverse;
+    }
+}
+/* FOOTER */
+
+/* SCROLL TO TOP */
+.scroll-up{
+    position: fixed;
+    bottom: -50px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #00d6b2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.scroll-up.scroll-active{
+    bottom: 40px;
+    opacity: 1;
+}
+
+.scroll-up a{
+    color: white;
+}
+
+@media (max-width: 475px){
+    .scroll-up{
+        right: 20px;
+    }
+}
+/* SCROLL TO TOP */

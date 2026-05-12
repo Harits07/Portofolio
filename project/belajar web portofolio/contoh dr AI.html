@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Harits</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #38bdf8;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px;
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #38bdf8;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Harits Portfolio</h1>
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('project')">Project</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="active">
+  <h2>Welcome</h2>
+  <p>Halo, saya Harits 👋</p>
+  <button onclick="alert('Semangat belajar web! 🔥')">Klik Aku</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Saya mahasiswa TRPL yang tertarik di dunia teknologi dan web development.</p>
+  </div>
+</section>
+
+<section id="project">
+  <h2>My Projects</h2>
+  <div class="card">Project 1 (Coming Soon)</div>
+  <div class="card">Project 2 (Coming Soon)</div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <input type="text" id="name" placeholder="Nama">
+  <button onclick="kirim()">Kirim</button>
+  <p id="output"></p>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  function kirim() {
+    let nama = document.getElementById('name').value;
+    document.getElementById('output').innerText = 'Halo ' + nama + '!';
+  }
+</script>
+
+</body>
+</html>
